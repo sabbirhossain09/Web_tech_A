@@ -1,0 +1,160 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;  /* Light Blue Background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Form Container */
+form {
+  background-color: #fff;
+  padding: 35px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Increased width of form for better spacing */
+  box-sizing: border-box;
+}
+
+/* Form Header */
+h2 {
+  text-align: center;
+  color: #007bff;  /* Blue color for header */
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0;  /* Square corners */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Input Groups for Email & Phone (side by side) */
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group label {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.input-group input {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0; /* Square corners */
+  box-sizing: border-box;
+}
+
+.input-group input[type="email"] {
+  width: 48%;
+}
+
+.input-group input[type="text"] {
+  width: 48%;
+}
+
+/* Radio Buttons */
+.gender-group {
+  margin-bottom: 20px;
+}
+
+.gender-group input[type="radio"] {
+  margin-right: 8px;
+}
+
+.gender-group label {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+/* Checkbox */
+.terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.terms input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Show/Hide Button for Confirm Password */
+#toggle-confirm-password {
+  width: auto;
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+#toggle-confirm-password:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input[type="email"],
+  .input-group input[type="text"] {
+    width: 100%;
+  }
+}
+
