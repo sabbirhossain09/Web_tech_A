@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Form</title>
+  <link rel="stylesheet" href="labtask_1.css">
+</head>
+<body>
+  <div class="container">
+    <p class="note"><span>*</span> Denotes Required Information</p>
+    <p class="breadcrumb">
+      &gt; <b>1 Donation</b> &nbsp;&gt; 2 Confirmation &nbsp;&gt; Thank You!
+    </p>
+
+    <h2>Donor Information</h2>
+
+    <form>
+      <label for="fname">First Name<span>*</span></label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="lname">Last Name<span>*</span></label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="company">Company</label>
+      <input type="text" id="company" name="company">
+
+      <label for="address1">Address 1<span>*</span></label>
+      <input type="text" id="address1" name="address1" required>
+
+      <label for="address2">Address 2</label>
+      <input type="text" id="address2" name="address2">
+
+      <label for="city">City<span>*</span></label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="state">State</label>
+      <select id="state" name="state">
+        <option value="">Select a State</option>
+        <option>California</option>
+        <option>Texas</option>
+        <option>New York</option>
+        <option>Florida</option>
+      </select>
+
+      <label for="zip">Zip Code<span>*</span></label>
+      <input type="text" id="zip" name="zip" required>
+
+      <label for="country">Country<span>*</span></label>
+      <select id="country" name="country">
+        <option value="">Select a Country</option>
+        <option>USA</option>
+        <option>Canada</option>
+        <option>UK</option>
+        <option>Bangladesh</option>
+      </select>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="fax">Fax</label>
+      <input type="text" id="fax" name="fax">
+
+      <label for="email">Email<span>*</span></label>
+      <input type="email" id="email" name="email" required>
+
+      <fieldset class="donation">
+        <legend>Donation Amount*</legend>
+        <label><input type="radio" name="amount" value="None"> None</label>
+        <label><input type="radio" name="amount" value="50"> $50</label>
+        <label><input type="radio" name="amount" value="75"> $75</label>
+        <label><input type="radio" name="amount" value="100"> $100</label>
+        <label><input type="radio" name="amount" value="250"> $250</label>
+        <label><input type="radio" name="amount" value="other"> Other</label>
+        <input type="text" name="other_amount" placeholder="Other Amount $">
+      </fieldset>
+
+      <div class="recurring">
+        <label><input type="checkbox" name="recurring"> I am interested in giving on a regular basis.</label>
+        <div class="monthly">
+          <label>Monthly Credit Card $</label>
+          <input type="text" name="monthly_amount" size="5">
+          <label>For</label>
+          <input type="text" name="months" size="5">
+          <label>Months</label>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
