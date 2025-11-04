@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 480px;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.note {
+  font-size: 13px;
+  color: #333;
+}
+
+.note span {
+  color: red;
+  font-weight: bold;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0 20px 0;
+}
+
+h2 {
+  color: red;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+span {
+  color: red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.donation label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.recurring {
+  margin-top: 15px;
+}
+
+.monthly {
+  margin-top: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
