@@ -1,0 +1,63 @@
+console.log("Hello, World!");
+
+const person = {
+  name: "John",
+  age: 30,
+  greet: function() {
+    console.log("Hello, " + this.name);
+  }
+};
+
+console.log(person.name); // John
+person.greet()
+
+unction fibonacci(n) {
+    let fib = [0, 1];
+    for (let i = 2; i < n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
+    return fib;
+}
+
+console.log(fibonacci(10));
+
+function add(a, b) {
+    return a + b;
+}
+
+let result = add(5, 3);  
+console.log(result);  
+
+function multiply(a, b) {
+    return a * b;
+}
+
+let result = multiply(4, 6); 
+console.log(result);
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paragraph Output</title>
+</head>
+<body>
+
+    <script>
+        const paragraph = `
+            JavaScript is a versatile language that is widely used for web development.
+            It allows developers to build interactive web pages by manipulating the DOM.
+            You can use JavaScript for client-side and server-side programming.
+            With frameworks like React, Vue, and Angular, JavaScript is even more powerful.
+        `;
+        
+        document.write(paragraph);  // Outputs the paragraph directly to the page
+    </script>
+
+</body>
+</html>
+
+
+
+
+
