@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Donation Form</h1>
+        <form id="donationForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Donation Amount:</label>
+            <div>
+                <input type="radio" id="amount1" name="donationAmount" value="10" required>
+                <label for="amount1">$10</label>
+                <input type="radio" id="amount2" name="donationAmount" value="20">
+                <label for="amount2">$20</label>
+                <input type="radio" id="amount3" name="donationAmount" value="50">
+                <label for="amount3">$50</label>
+                <input type="radio" id="otherAmount" name="donationAmount" value="other">
+                <label for="otherAmount">Other</label>
+            </div>
+            <input type="text" id="otherAmountInput" name="otherAmountInput" placeholder="Enter other amount" style="display:none;">
+
+            <label for="recurringCheckbox">I am interested in giving on a regular basis</label>
+            <input type="checkbox" id="recurringCheckbox" name="recurringCheckbox">
+            <div id="recurringFields" style="display:none;">
+                <label for="recurringFrequency">Frequency:</label>
+                <select id="recurringFrequency">
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+                <label for="recurringAmount">Amount:</label>
+                <input type="number" id="recurringAmount" readonly>
+            </div>
+
+            <label>Acknowledge Donation To:</label>
+            <select id="acknowledgeSelect">
+                <option value="none">None</option>
+                <option value="honor">In Honor</option>
+                <option value="memory">In Memory</option>
+            </select>
+
+            <div id="acknowledgeName" style="display:none;">
+                <label for="acknowledgeNameInput">Name to Acknowledge:</label>
+                <input type="text" id="acknowledgeNameInput" name="acknowledgeNameInput">
+            </div>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" maxlength="500"></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="button" id="resetButton">Reset</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
