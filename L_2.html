@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+</head>
+<body>
+
+    <h1>University Admission Form</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required maxlength="30"><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required maxlength="30"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="school">High School Name:</label><br>
+            <input type="text" id="school" name="school" required maxlength="50"><br><br>
+
+            <label for="hsc">HSC / Equivalent GPA:</label><br>
+            <input type="text" id="hsc" name="hsc" required maxlength="4"><br><br>
+
+            <label for="department">Preferred Department:</label><br>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">Computer Science and Engineering</option>
+                <option value="EEE">Electrical and Electronics Engineering</option>
+                <option value="BBA">Business Administration</option>
+                <option value="ENG">English</option>
+                <option value="LAW">Law</option>
+            </select><br><br>
+
+            <label>Interests:</label><br>
+            <input type="checkbox" name="interest" value="Sports"> Sports <br>
+            <input type="checkbox" name="interest" value="Music"> Music <br>
+            <input type="checkbox" name="interest" value="Robotics"> Robotics <br>
+            <input type="checkbox" name="interest" value="Volunteer"> Volunteering <br><br>
+
+        </fieldset>
+        <br>
+    
+        <fieldset>
+            <legend>Required Documents</legend>
+
+            <label for="photo">Upload Photo:</label><br>
+            <input type="file" id="photo" name="photo" required><br><br>
+
+            <label for="transcript">Upload Transcript:</label><br>
+            <input type="file" id="transcript" name="transcript" required><br><br>
+
+        </fieldset>
+        <br>
+
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
